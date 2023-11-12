@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'JeonjuCraftMjB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftMjB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+.hidden{
+    display: none;
+}
+.content{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+    width: 1100px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.251);
+    top: 40px;
+    left: 78px;
+    padding: 20px;
+    font-family: 'JeonjuCraftMjB';
+}
+.background img {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 600px;
+}
+/*상단-로그인 폼*/
+.login-form input:first-child{
+    width: 230px;
+    height: 50px;
+    margin-right: 10px;
+    border-width: 0 0 2px;
+    border-color: #d3b400;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 30px;
+    font-family: 'JeonjuCraftMjB';
+    color: rgb(0, 0, 0);
+}
+.login-form input:first-child::placeholder{
+    color: white;
+    font-size: 25px;
+}
+.login-form input:first-child:focus{
+    outline: none;
+}
+.login-form input:last-child{
+    width: 80px;
+    height: 50px;
+    border: solid 2px #d3b400;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    font-family: 'JeonjuCraftMjB';
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.login-form input:last-child:hover{
+    background-color: #d3b400;
+    border: none;
+    color: white;
+    transition: 0.5s;
+}
+.login-greeting{
+    font-size: 50px;
+    color: #d3b400;
+    text-shadow: 3px 3px 1px rgb(46, 113, 13);
+}
+/*상단-시계*/
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.clock{
+    font-size: 40px;
+    color: #d3b400;
+    font-family: 'JeonjuCraftMjB';
+}
+/*하단-박스*/
+.box{
+    display: flex;
+}
+/*하단-날씨*/
+.current-condition ,
+.netflix,
+.todos{
+    border-top: solid 2px #d3b400;
+    border-bottom: solid 2px #d3b400;
+    width: 320px;
+    height: 380px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'SUITE-Regular';
+}
+.current-condition_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px;
+}
+.temp-current{
+    color: white;
+    font-size: 70px;
+}
+.area{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.weather{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.temp-maxmin{
+    color: white;
+    font-size: 20px;
+}
+.temp-maxmin div{
+    margin-bottom: 10px;
+}
+/*하단-넷플*/
+.netflix{
+    margin: 0px 30px;
+}
+.netflix img{
+    width: 190px;
+    height: 260px;
+    border: solid 2px #d3b400;
+    margin: 15px 0px;
+}
+.netflix div:first-child,
+.todos div:first-child {
+    color: rgb(46, 113, 13);
+    text-shadow: 1px 1px 0px #d3b400;
+    font-size: 30px;
+}
+.netflix div:nth-child(3){
+    color: white;
+    font-size: 23px;
+    text-shadow: 1px 1px 0px gray;
+    margin-bottom: 10px;
+}
+.netflix div:last-child{
+    color: white;
+    font-size: 15px;
+    text-shadow: 1px 1px 0px gray;
+}
+/*하단-메모장*/
+.todo-form{
+    margin-top: 15px;
+}
+.todo-form input{
+    border: solid 2px #d3b400;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+.todo-form input::placeholder{
+    color: rgba(255, 255, 255, 0.543);
+}
+.todo-form input:focus{
+    border: solid 2px rgb(46, 113, 13);
+    outline: none;
+}
+.todo-list{
+    margin: 20px;
+}
+.list{
+    padding: 0px 8px;
+    background-color: rgba(0, 0, 0, 0.416);
+    color: white;
+    font-size: 20px;
+    max-height: 260px;
+    overflow-y: auto;
+}
+.list::-webkit-scrollbar{
+    width: 8px;
+}
+.list::-webkit-scrollbar-thumb{
+    background-color: #d3b400;
+    border-radius: 30px;
+}
+.list li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.list li button {
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.list li button:hover{
+    color: rgb(234, 47, 47);
+    transition: 0.3s;
+}

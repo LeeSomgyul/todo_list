@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url(style.css);
+      @import url(reset.css);
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="top">
+        <form class="login-form hidden">
+          <input required type="text" maxlength="8" placeholder="이름을 입력하세요."/>
+          <input type="submit" value="등록" />
+        </form>
+        <div class="login-greeting hidden"></div>
+        <div class="clock">00:00:00</div>
+      </div> 
+      <div class="box">
+        <div class="current-condition">
+          <div class="current-condition_top">
+            <div class="wea-icon">
+              <img src="" />
+            </div>
+            <div class="temp-current"></div>
+          </div>
+          <div class="area"></div>
+          <div class="weather"></div>
+          <div class="temp-maxmin">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="netflix">
+            <div>[추천 영화/드라마]</div>
+            <div><img src=""/></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="todos">
+          <div>[메모장]</div>
+          <form class="todo-form">
+            <input type="text" placeholder="메모장 내용 입력"/>
+          </form>
+          <div class="todo-list">
+            <ul class="list"></ul>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="background">
+    </div>
+
+
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/random.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+    <script src="https://kit.fontawesome.com/4947cec968.js" crossorigin="anonymous"></script>
+  </body>
+</html>
